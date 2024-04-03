@@ -1,7 +1,8 @@
 $(function () {
 
-    $('.utils_wrap').on('click', function () {
-        $('.gnb').toggleClass('on')
+    $('.utils_wrap .hamburger').on('click', function () {
+        $(this).toggleClass('is-active');
+        $('.gnb').toggleClass('on');
     });
 
     $('.gnb ul li').on('mouseenter', function () {

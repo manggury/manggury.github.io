@@ -239,9 +239,7 @@ body {
 .portfolio .slide .inner {
     position: relative;
     display: flex;
-    gap: 150px;
     justify-content: space-between;
-
     align-items: center;
     height: 100vh;
 }
