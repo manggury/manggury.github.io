@@ -83,10 +83,22 @@ $(function () {
         });
     }
 
-    animateSlide('.slide01', -1000, 1300);
-    animateSlide('.slide02', -1000, 1300);
-    animateSlide('.slide03', -1000, 1300);
-    animateSlide('.slide04', -1000, 1300);
-    animateSlide('.slide05', -1000, 1300);
+    animateSlide('.slide01', -900, 1300);
+    animateSlide('.slide02', -900, 1300);
+    animateSlide('.slide03', -900, 1300);
+    animateSlide('.slide04', -900, 1300);
+    animateSlide('.slide05', -900, 1300);
 
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".portfolio .line", {
+        scrollTrigger: {
+            trigger: '.portfolio .slide05',
+            start: "0% 0%",
+            end: "+=200",
+            scrub: 1,
+            // markers: true,
+
+        },
+        width: 1680,
+    });
 });
