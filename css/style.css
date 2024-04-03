@@ -16,7 +16,8 @@
 }
 
 .desc_table th {
-    border-right: 1px solid var(--white-color);
+    border-right: 1px solid var(--primary-color);
+    min-width: 104px;
 }
 
 .desc_table th,
@@ -25,7 +26,6 @@
     text-align: left;
     font-weight: 400;
     height: 40px;
-    color: var(--white-color);
     border-bottom: 1px solid var(--lightgray-color);
 }
 
@@ -52,8 +52,6 @@ body {
     margin: 0 0 16px 0;
     font-size: 60px;
     font-weight: 900;
-    /* text-transform: uppercase; */
-    color: var(--white-color);
 }
 
 .line {
@@ -64,7 +62,7 @@ body {
     font-size: 0;
     width: 0;
     height: 1px;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 /* 헤어 - - - - - - - -- - -  - - - */
@@ -82,7 +80,7 @@ body {
 }
 
 #header .inner h1 {
-    color: var(--white-color);
+    /* color: var(--white-color); */
 }
 
 .gnb {
@@ -108,7 +106,6 @@ body {
 
 .gnb ul li a {
     display: block;
-    color: var(--white-color);
 }
 
 .hamburger {
@@ -118,7 +115,7 @@ body {
 .hamburger-inner,
 .hamburger-inner:after,
 .hamburger-inner:before {
-    background-color: var(--white-color) !important;
+    background-color: var(--darkgray-color) !important;
 }
 
 /* 메인비주얼 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
@@ -137,8 +134,6 @@ body {
     display: block;
     margin: 0 0 40px 0;
     transform: rotateX(90deg) skew(-0.1deg);
-    /* color: var(--white-color); */
-    color: var(--darkgray-color);
 }
 
 .mainVisal .tit h2 span {
@@ -154,8 +149,6 @@ body {
 .mainVisal .tit p {
     font-size: 6vw;
     opacity: 0;
-    /* color: var(--white-color); */
-    color: var(--darkgray-color);
 }
 
 
@@ -173,7 +166,6 @@ body {
     position: relative;
     font-size: 40px;
     line-height: 30px;
-    /* color: var(--white-color); */
     color: var(--darkgray-color);
 }
 
@@ -250,7 +242,7 @@ body {
 }
 
 .portfolio .slide_wrap .slide:nth-child(even) {
-    background: #333;
+    /* background: #333; */
     box-shadow: 0px 0px 40px #fff;
 }
 
@@ -267,18 +259,15 @@ body {
     font-size: 40px;
     font-weight: 900;
     text-transform: uppercase;
-    color: var(--white-color);
 }
 
 .portfolio .slide .inner .desc h3 span {
     display: block;
     font-size: 60px;
-    color: var(--white-color);
 }
 
 .portfolio .slide .inner .desc p {
     margin: 0 0 32px 0;
-    color: var(--white-color);
 }
 
 .portfolio .slide .inner .desc .desc_table td span {
@@ -301,7 +290,6 @@ body {
     border-radius: 8px;
     padding: 12px 32px;
     background: var(--primary-color);
-    color: var(--darkgray-colorlor);
 }
 
 .portfolio .slide .inner .mokup {
@@ -402,12 +390,13 @@ body {
     line-height: 50px;
     transition: 0.5s;
 
-    color: var(--white-color);
+    color: var(--darkgray-color);
+
 }
 
 .tab_menu li.on button {
-    background: var(--white-color);
-    color: var(--darkgray-color);
+    background: var(--darkgray-color);
+    color: var(--white-color);
 }
 
 .tab_con {
@@ -424,7 +413,7 @@ body {
     padding: 130px 50px;
     gap: 50px;
     justify-content: center;
-    background: var(--white-color);
+    background: var(--darkgray-color);
 }
 
 .tab_con .sub_con .itm {
@@ -472,7 +461,7 @@ body {
 .profile .inner .desc p {
     margin: 0 0 32px 0;
     line-height: 24px;
-    color: var(--white-color);
+    color: var(--darkgray-color);
 }
 
 .profile .inner .desc p span {
