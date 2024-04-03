@@ -33,12 +33,9 @@
     display: none;
 }
 
-/* .wrapper {
-    overflow: hidden;
-} */
-
 body {
-    background: var(--darkgray-color);
+    /* background: var(--darkgray-color); */
+    background: url(../images/patten01.png);
 }
 
 .inner {
@@ -140,21 +137,25 @@ body {
     display: block;
     margin: 0 0 40px 0;
     transform: rotateX(90deg) skew(-0.1deg);
+    /* color: var(--white-color); */
+    color: var(--darkgray-color);
 }
 
 .mainVisal .tit h2 span {
     font-size: 12vw;
+    font-weight: 200;
 }
 
 .mainVisal .tit h2 span:last-child {
     font-size: 16vw;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .mainVisal .tit p {
     font-size: 6vw;
     opacity: 0;
-    color: var(--white-color);
+    /* color: var(--white-color); */
+    color: var(--darkgray-color);
 }
 
 
@@ -172,7 +173,8 @@ body {
     position: relative;
     font-size: 40px;
     line-height: 30px;
-    color: var(--white-color);
+    /* color: var(--white-color); */
+    color: var(--darkgray-color);
 }
 
 .mainVisal .scroll_btn .icon::after {
