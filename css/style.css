@@ -6,6 +6,20 @@
     --white-color: #FFFFFF;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background: url(../images/patten01.png);
+}
+
+.inner {
+    max-width: 1680px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 .table {
     margin: 0 0 40px 0;
 }
@@ -29,23 +43,9 @@
     border-bottom: 1px solid var(--lightgray-color);
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
-body {
-    /* background: var(--darkgray-color); */
-    background: url(../images/patten01.png);
-}
-
-.inner {
-    max-width: 1680px;
-    margin: 0 auto;
-    width: 100%;
-}
-
 .section {
     height: 100vh;
+    overflow: hidden;
 }
 
 .section h2 {
@@ -62,10 +62,10 @@ body {
     font-size: 0;
     width: 0;
     height: 1px;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.3);
 }
 
-/* 헤어 - - - - - - - -- - -  - - - */
+/* 헤더 - - - - - - - -- - -  - - - */
 #header {}
 
 #header .inner {
@@ -79,9 +79,7 @@ body {
     max-width: 1680px;
 }
 
-#header .inner h1 {
-    /* color: var(--white-color); */
-}
+#header .inner h1 {}
 
 .gnb {
     position: fixed;
@@ -151,15 +149,12 @@ body {
     opacity: 0;
 }
 
-
-
 .mainVisal .scroll_btn {
     position: absolute;
     bottom: 80px;
     right: calc((100% - 1680px) / 2);
     z-index: 999;
     opacity: 0;
-    /* animation: scroll01 infinite 2s; */
 }
 
 .mainVisal .scroll_btn .icon {
@@ -227,8 +222,6 @@ body {
     }
 }
 
-
-
 /* .portfolioㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 .portfolio.section {
     position: relative;
@@ -236,38 +229,44 @@ body {
 }
 
 .portfolio .slide_wrap {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
 }
 
-.portfolio .slide_wrap .slide:nth-child(even) {
-    /* background: #333; */
-    box-shadow: 0px 0px 40px #fff;
-}
+.portfolio .slide_wrap .slide:nth-child(even) {}
 
 .portfolio .slide .inner {
     position: relative;
     display: flex;
     gap: 150px;
+    justify-content: space-between;
+
     align-items: center;
-    height: 90vh;
+    height: 100vh;
+}
+
+.portfolio .slide .inner .desc {
+    flex: 0 0 450px;
 }
 
 .portfolio .slide .inner .desc h3 {
     margin: 0 0 16px 0;
     font-size: 40px;
-    font-weight: 900;
+    font-weight: 200;
     text-transform: uppercase;
 }
 
 .portfolio .slide .inner .desc h3 span {
     display: block;
     font-size: 60px;
+    font-weight: 600;
+    line-height: 70px;
 }
 
 .portfolio .slide .inner .desc p {
     margin: 0 0 32px 0;
+    font-weight: 500;
 }
 
 .portfolio .slide .inner .desc .desc_table td span {
@@ -294,15 +293,20 @@ body {
 
 .portfolio .slide .inner .mokup {
     position: relative;
+    display: flex;
 }
 
 .portfolio .slide .inner .mokup_M {
+    position: absolute;
+    bottom: -50px;
+    left: -180px;
+    z-index: 1;
     width: 300px;
     height: 600px;
-    border: 3px solid #000;
+    border: 1px solid #666;
     border-radius: 30px;
     overflow: hidden;
-    cursor: n-resize
+    cursor: n-resize;
 }
 
 .portfolio .slide .inner .mokup_M::before {
@@ -310,7 +314,7 @@ body {
     position: absolute;
     inset: 0 0 0 0;
     z-index: -1;
-    border-radius: 35px;
+    border-radius: 30px;
     transition: 6s;
 }
 
@@ -339,14 +343,11 @@ body {
 }
 
 .portfolio .slide .inner .mokup_p {
-    position: absolute;
-    top: -50px;
-    left: 50%;
-    z-index: -1;
-    width: 800px;
-    height: 400px;
+
+    width: 900px;
+    height: 450px;
     overflow: hidden;
-    border: 2px solid #000;
+    border: 1px solid #666;
     border-radius: 15px;
 }
 
@@ -354,8 +355,6 @@ body {
     width: 100%;
     height: 100%;
 }
-
-
 
 /* .trainning ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
 .trainning {
@@ -391,7 +390,6 @@ body {
     transition: 0.5s;
 
     color: var(--darkgray-color);
-
 }
 
 .tab_menu li.on button {
@@ -423,7 +421,6 @@ body {
     border: 2px solid #000;
     border-radius: 15px;
     overflow: hidden;
-
 }
 
 .tab_con .sub_con .itm .txt_box {
@@ -439,8 +436,6 @@ body {
     background: rgba(0, 0, 0, 0.8);
     color: var(--white-color);
 }
-
-
 
 /* .profile ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
 
@@ -472,32 +467,11 @@ body {
     transform: scale(0.8);
 }
 
-/*.profile_wrap {
-    display: flex;
-    gap: 100px;
-}
-
- .profile_wrap .desc_table caption {
-    padding: 0 0 30px 0;
-    font-size: 40px;
-    font-weight: 600;
-    text-align: left;
-    color: var(--white-color);
-}
-
-.profile_wrap .desc_table td {
-    height: 60px;
-    line-height: 24px;
-    word-break: keep-all;
-} */
-
-
 /* .footer ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
 
 .footer {
     padding: 20px 0 10px 0;
     text-align: center;
-    color: var(--white-color);
 }
 
 .totop {

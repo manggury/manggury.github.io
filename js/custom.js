@@ -43,7 +43,7 @@ $(function () {
         scrollTrigger: {
             trigger: '.mainVisal',
             start: "0% 0%",
-            end: "+=100",
+            end: "+=500",
             scrub: 1,
         },
         width: 1680,
@@ -76,27 +76,28 @@ $(function () {
             scrollTrigger: {
                 trigger: `.portfolio ${slideClass}`,
                 start: "-50% 0%",
-                end: "+=100",
+                end: "+=250",
                 scrub: 1,
+
             },
             x: mokupX
         });
     }
 
-    animateSlide('.slide01', -900, 1300);
-    animateSlide('.slide02', -900, 1300);
-    animateSlide('.slide03', -900, 1300);
-    animateSlide('.slide04', -900, 1300);
-    animateSlide('.slide05', -900, 1300);
+    animateSlide('.slide01', -1100, 1300);
+    animateSlide('.slide02', -1100, 1300);
+    animateSlide('.slide03', -1100, 1300);
+    animateSlide('.slide04', -1100, 1300);
+    animateSlide('.slide05', -1100, 1300);
 
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(".portfolio .line", {
         scrollTrigger: {
             trigger: '.portfolio .slide05',
             start: "0% 0%",
-            end: "+=200",
+            end: "+=500",
             scrub: 1,
-            // markers: true,
+
 
         },
         width: 1680,
